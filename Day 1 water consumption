@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int x,t;
+	scanf("%d",&t);
+	while(t)
+	{
+	    scanf("%d",&x);
+    	if(x<2000)
+    	{
+    	    printf("No\n");
+    	}
+    	else
+    	{
+    	    printf("Yes\n");
+    	}
+        t--;
+	}
+	return 0;
+}
