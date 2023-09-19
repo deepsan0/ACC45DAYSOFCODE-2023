@@ -1,0 +1,16 @@
+//Day-2 chef and chocolates 
+#include <stdio.h>
+
+int main(void) {
+    int X, Y, Z, T,n;
+    scanf("%d",&T);
+    while(T)
+    {
+        scanf("%d %d %d",&X,&Y,&Z);
+        n=((X*5+Y*10)/Z);
+        printf("%d\n",n);
+        T--;
+    }
+	
+	return 0;
+}
