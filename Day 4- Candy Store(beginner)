@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+	int T,X,Y,amount;
+	scanf("%d",&T);
+	while(T--)
+	{
+	    scanf("%d %d",&X,&Y);
+	    if(Y>X)
+	    {
+	       amount = (X + (2*(Y-X)));
+	       printf("%d\n",amount);
+	    }
+	    else
+	    {
+	        printf("%d\n",Y);
+	    }
+	}
+	return 0;
+}
+
