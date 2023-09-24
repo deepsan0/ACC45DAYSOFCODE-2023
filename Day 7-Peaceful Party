@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+	int t;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    int Pa,Pb,Pc;
+	    scanf("%d %d %d",&Pa,&Pb,&Pc);
+	    if(Pb>Pa+Pc)
+	    {
+	        printf("%d\n",Pb);
+	    }
+	    else
+	    {
+	        printf("%d\n",Pa+Pc);
+	    }
+	}
+	return 0;
+}
+
