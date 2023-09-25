@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+// int max(int w, int h);
+
+int main(){
+	int t;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    int n,b;
+	    int maxarea=0;
+	    scanf("%d %d",&n,&b);
+	    for(int i=1;i<=n;i++)
+	    {
+	        int w,h,p;
+	        scanf("%d %d %d",&w,&h,&p);
+	        int area;
+	        area=w*h;
+	        if(p<=b && area > maxarea)
+	        {
+	           maxarea=area;
+	            
+	        }
+	    }
+	    if(maxarea>0)
+	    {
+	        printf("%d\n",maxarea);
+	    }
+	    else
+	    {
+	        printf("no tablet\n");
+	    }
+	    
+	   // int max(w,h)
+	   // {
+	   //     int a;
+	   //     a=w*h;
+	   //     return a;
+	   // }
+	    
+	}
+	
+	return 0;
+}
+
