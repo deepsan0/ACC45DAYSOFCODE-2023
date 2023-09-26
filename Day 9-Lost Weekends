@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+	int t;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    int a1,a2,a3,a4,a5,p,w;
+	    scanf("%d %d %d %d %d %d ",&a1,&a2,&a3,&a4,&a5,&p);
+	    w=p*a1+p*a2+p*a3+p*a4+p*a5;
+	    if(w<=120)
+	     {
+	            printf("No\n");
+	     }
+	    else
+	        {
+	            printf("Yes\n");
+	        }
+	    
+	}
+	return 0;
+}
+
