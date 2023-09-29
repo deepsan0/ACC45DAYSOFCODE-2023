@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main(void) {
+	int t;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    int a,b,temp=0,temp1=0;
+	    scanf("%d %d",&a,&b);
+	    for(int i=1;temp<=a && temp1<=b;i++)
+	    {
+	        if(i%2!=0)
+	        {
+	            temp=temp+i;
+	        }
+	        else
+	        {
+	            temp1=temp1+i;
+	        }
+	    }
+	    if(temp<=a)
+	    {
+	        printf("Limak\n");
+	    }
+	    else
+	    {
+	        printf("Bob\n");
+	    }
+	    
+	}
+	return 0;
+}
+
