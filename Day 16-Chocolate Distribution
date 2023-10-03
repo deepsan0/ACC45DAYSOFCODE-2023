@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+	int t;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    int n,r,j1=0,j2=1,j3=1;
+	    scanf("%d",&n);
+	    printf("%d %d %d\n",1,1,n-2);
+	    
+	    
+	}
+	return 0;
+}
+
