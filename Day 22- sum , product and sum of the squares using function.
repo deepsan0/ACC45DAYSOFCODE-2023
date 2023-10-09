@@ -1,0 +1,19 @@
+#include<stdio.h>
+int sum(int a,int b){
+return a+b;
+}
+int product(int a,int b){
+return a*b;
+}
+int sqsum(int a,int b){
+return ((a*a)+(b*b));
+}
+int main(){
+int i,j;
+printf("Enter two numbers: ");
+scanf("%d %d",&i,&j);
+printf("sum=%d\n",sum(i,j));
+printf("product=%d\n",product(i,j));
+printf("Sum of square of two numbers: %d",sqsum(i,j));
+return 0;
+}
