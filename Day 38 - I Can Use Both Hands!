@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int t;
+	scanf("%d",&t);
+	while(t--)
+	{
+	    int l, r, M;
+	    scanf("%d %d %d", &l, &r, &M);
+	    int c=0, d=0;
+	    if(M%l==0)
+	    {
+	        c=M/l;
+	    }
+	    else
+	    {
+	        c=(M/l) +1;
+	    }
+	    d=M/r;
+	    printf("%d\n", c+d);
+	}
+	return 0;
+}
+
