@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int t;
+	scanf("%d",&t);
+	while(t--){
+	    int n;
+	    scanf("%d",&n);
+	    int p[n];
+	    int s[n];
+	    int max = 0;
+	    for(int i = 0;i<n;i++){
+	     scanf("%d %d",&p[i],&s[i]);
+	    }
+	    for(int i = 0;i<n;i++){
+	        if(p[i]>8){
+	           s[i] = 0;
+	        }
+	        
+	    }
+	     for(int i=0;i<n;i++){
+	        for(int j=0;j<n;j++){
+	            if(p[i]==p[j]&&i!=j&&s[i]!=0&&s[j]!=0){
+	                if(s[i]>=s[j]){
+	                    s[j]=0;
+	                }
+	            }
+	        }
+	    }
+	    for(int i = 0;i<n;i++){
+	        max = max + s[i];
+	    }
+	    printf("%d \n",max);
+	    
+	}
+	return 0;
+}
+
